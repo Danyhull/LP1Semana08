@@ -8,12 +8,12 @@ namespace PlayerManager1
     public class Player
     {
         public string Name { get; }
-        public int Score { get; set;}
+        public int Score { get; private set;}
 
-        public Player(string name, int score)
+        public Player(string _name, int _score)
         {
-            Name = name;
-            Score = score;
+            Name = _name;
+            Score = _score;
         }
 
     }
