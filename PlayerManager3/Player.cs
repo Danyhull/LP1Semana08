@@ -1,6 +1,6 @@
 using System;
 
-namespace PlayerManager1
+namespace PlayerManager3
 {
     public class Player
     {
@@ -11,6 +11,11 @@ namespace PlayerManager1
         {
             Name = _name;
             Score = _score;
+        }
+        public int CompareTo(Player other)
+        {
+            if (other == null) return 1;
+            return other.Score - this.Score;
         }
 
     }
